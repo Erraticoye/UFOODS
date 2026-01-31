@@ -262,9 +262,6 @@ export default function App() {
           <p className="text-xl md:text-2xl mb-8 text-white/90">
             {t.hero.subtitle}
           </p>
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
-            {t.hero.cta}
-          </Button>
         </div>
       </section>
 
