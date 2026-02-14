@@ -18,6 +18,16 @@ export default defineConfig({
     },
   },
 
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        products: path.resolve(__dirname, 'products.html'),
+        contact: path.resolve(__dirname, 'contact.html'),
+        yasou: path.resolve(__dirname, 'yasou.html'),
+      },
+    },
+  },
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
